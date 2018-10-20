@@ -5,6 +5,9 @@
  * AP CSA
  * Kaehms Period 2
  * UsedCarLot Project
+ * Has a method to set the number of gears
+ * Uses super to instantiate its variables
+ * Has a getter and setter for numGears
  */
 public class ManualTransCar extends Car{
 private int numGears;
