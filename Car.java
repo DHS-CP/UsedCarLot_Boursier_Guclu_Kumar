@@ -15,10 +15,13 @@ import java.lang.Double;
  * AP CSA
  * Kaehms Period 2
  * UsedCarLot Project
+ * Declares list and instantaites the new variables
+ * Declares the default constructor
+ * Has a method that generates a random vinNumber
+ * Has the getters and setters for all the variables
+ * Has a toString method
  */
 public abstract class Car{
-    List<int[]> list = new ArrayList<int[]>();
-    int[] anArray;
     private int price;
     private String model;
     private String make;
@@ -27,14 +30,12 @@ public abstract class Car{
     private String trans;
     private String vinNumber;
     private int x;
-
     public Car(){
         price=0;
         model="undef";
         year = 0;
         vinNumber = newVinNumber();
     }
-
     public Car (int p, int y, String mod, String c, String t, String v,String m){
         price=p;
         model=mod;
@@ -44,7 +45,6 @@ public abstract class Car{
         vinNumber=v;
         make=m;
     }
-    
     public Car (int p, String m) {
         price=p;
         model=m;
@@ -54,15 +54,7 @@ public abstract class Car{
         vinNumber=newVinNumber();
         make="undef";
     }
-    
-    public String newVinNumber() {
-        /*for(int i=0; i<=17; i++) {
-            anArray[i] = (int)(Math.random());
-            while((anArray[i] < 0) && (anArray[i] > 9)){
-                anArray[i] = (int)Math.random();
-            }
-            System.out.println(anArray[i]);
-        }*/  
+    public String newVinNumber() { 
         vinNumber = "";
         for(int i=1; i<17; i++) {
             int a = (int)(Math.random() * 10);
@@ -72,7 +64,6 @@ public abstract class Car{
             String newNumber = Integer.toString(a);
             vinNumber = vinNumber + newNumber;  
         }
-        //System.out.println(vinNumber);
         return vinNumber;
     }
     public void setPrice(int p){
@@ -84,27 +75,21 @@ public abstract class Car{
             price=p;
         }
     }      
-
     public int getPrice(){
         return  price;
     }
-
     public void setModel(String m){
         model=m;
     }
-
     public String getModel(){
         return  model;
     }
-
     public void setColor(String c){
         color=c;
     }
-
     public String getColor() {
         return color;
     }
-
     public void setTrans(String t) {
         t.toLowerCase();
         if(t.equals("auto") || t.equals("manual")) {
@@ -114,35 +99,27 @@ public abstract class Car{
             System.out.println("Error, unrecognized car type");
         }
     }   
-
     public String getTrans() {
         return trans;
     }
-    
     public void setVinNumber(String v) {
         vinNumber = v;
     }
-
     public String getVinNumber(){
         return vinNumber;
     }
-
     public void setYear(int y){
         year = y;
     }
-
     public int getYear() {
         return year;
     }
-    
     public void setMake(String m){
         make = m;
     }
-    
     public String getMake() {
         return make;
     }
-    
     public String toString () {
         return model + ", Transmission: " + trans + ", $" + price + ", Vin: " + vinNumber;
     }
