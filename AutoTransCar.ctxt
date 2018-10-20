@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=AutoTransCar
+comment0.text=\r\n\ Gorkem\ Guclu\r\n\ Micah\ Boursier\r\n\ Sankalp\ Kumar\r\n\ AP\ CSA\r\n\ Kaehms\ Period\ 2\r\n\ UsedCarLot\ Project\r\n
+comment1.params=
+comment1.target=AutoTransCar()
+comment2.params=
+comment2.target=void\ toggleCruzControl()
+comment3.params=p\ m\ ccOn
+comment3.target=AutoTransCar(int,\ java.lang.String,\ boolean)
+comment4.params=cc
+comment4.target=void\ setCruzControl(boolean)
+comment5.params=
+comment5.target=boolean\ getCruzControl()
+numComments=6

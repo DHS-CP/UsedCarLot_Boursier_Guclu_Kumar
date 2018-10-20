@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=UsedCarLot
+comment0.text=\r\n\ Gorkem\ Guclu\r\n\ Micah\ Boursier\r\n\ Sankalp\ Kumar\r\n\ AP\ CSA\r\n\ Kaehms\ Period\ 2\r\n\ UsedCarLot\ Project\r\n
+comment1.params=
+comment1.target=UsedCarLot()
+comment2.params=p\ m\ carType\ ng
+comment2.target=Car\ addCar(int,\ java.lang.String,\ java.lang.String,\ int)
+comment3.params=by\ s\ n
+comment3.target=void\ removeCars(java.lang.String,\ java.lang.String,\ int)
+comment3.text=public\ \ void\ testRemove(int\ n){\r\n\ \ \ \ \ \ \ \ if\ (n\=\=1)\ {\ c1\=removeCar(c1);}\r\n\ \ \ \ \ \ \ \ if\ (n\=\=2)\ {\ c2\=removeCar(c2);}\r\n\ \ \ \ \ \ \ \ if\ (n\=\=3)\ {\ c3\=removeCar(c3);}\r\n}
+comment4.params=by\ s\ n
+comment4.target=void\ changePrice(java.lang.String,\ java.lang.String,\ int)
+comment5.params=
+comment5.target=void\ listCars()
+comment6.params=
+comment6.target=void\ prompt()
+numComments=7

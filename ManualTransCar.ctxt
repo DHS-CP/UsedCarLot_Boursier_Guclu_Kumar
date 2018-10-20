@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ManualTransCar
+comment0.text=\r\n\ Gorkem\ Guclu\r\n\ Micah\ Boursier\r\n\ Sankalp\ Kumar\r\n\ AP\ CSA\r\n\ Kaehms\ Period\ 2\r\n\ UsedCarLot\ Project\r\n
+comment1.params=
+comment1.target=ManualTransCar()
+comment2.params=p\ m\ ng
+comment2.target=ManualTransCar(int,\ java.lang.String,\ int)
+comment3.params=ng
+comment3.target=void\ setNumGears(int)
+comment4.params=
+comment4.target=int\ getNumGears()
+numComments=5
