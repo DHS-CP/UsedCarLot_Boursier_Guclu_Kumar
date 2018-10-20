@@ -5,6 +5,9 @@
  * AP CSA
  * Kaehms Period 2
  * UsedCarLot Project
+ * Has a cruzControlOn bookean
+ * Has a getter and setter for cruzControl
+ * Has a toggleCruzControl method
  */
 public class AutoTransCar extends Car{ 
 private boolean cruzControlOn;
