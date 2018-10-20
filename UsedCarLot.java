@@ -11,31 +11,28 @@ import java.util.Scanner;
  */
 public class UsedCarLot
 {
-  // this is a brute force method of creating various car instance variables
-  // How could we simplify this using a list?
- 
+/*
+*This is a brute force method of creating various car instance variables
+*How could we simplify this using a list?
+*/
   int totalValue;
   Scanner in = new Scanner(System.in);
-  private List<Car> cars = new ArrayList<Car>();
-  
+  private List<Car> cars = new ArrayList<Car>(); 
  public UsedCarLot(){
      cars.add((Car) new AutoTransCar(2500,"VW Bug", false));
      cars.add((Car) new AutoTransCar(5000,"Ford Mustang", false));
      cars.add((Car) new ManualTransCar(12000,"Honda Fit", 5));
-     
      /* Note Cannot instantiate c4 below.  Why?
-     c4= (Car) new Car(12000,"Honda Fit");
-     totalValue+=c4.getPrice();
+     *c4= (Car) new Car(12000,"Honda Fit");
+     *totalValue+=c4.getPrice();
      */
-    
     prompt();
-    
-     // This is how you would have to determin number of gears of a manual trans
-     // car.  Why?
-     //System.out.println("c3 num gears = " + ((ManualTransCar)c3).getNumGears());
-     
+     /*
+     *This is how you would have to determin number of gears of a manual trans
+     *car.  Why?
+     *System.out.println("c3 num gears = " + ((ManualTransCar)c3).getNumGears());
+     */
 }
-
     public Car addCar(int p, String m, String carType, int ng){
          if (carType.equals("auto")){
              Car c=(Car) new AutoTransCar(p,m, false);
@@ -53,8 +50,7 @@ public class UsedCarLot
             }
             System.out.println("AddCar: Incorrect car type passed to addCar method!");
             return null;
-        }
-    
+        }   
     /**
      * removeCar takes a Car variable as a param, and returns a null pointer,
      * thus setting the Car that you are trying to remove to null.  Why can't
@@ -133,7 +129,6 @@ public void removeCars (String by, String s, int n){
             System.out.println("The cars remain in the lot.");
         }
 }
-
 public void changePrice (String by, String s, int n) {
         System.out.println("What price should they be set to?");
         int newP = Integer.parseInt(in.nextLine());
@@ -170,15 +165,12 @@ public void changePrice (String by, String s, int n) {
             }
         }
             System.out.println("changed price to " + newP + " dollars.");
-
 }  
-
 public void listCars () {
     for (Car i : cars) {
         System.out.println(i);
     }
 }
-
 public void prompt () {
     boolean repeat = true;
     System.out.println("What would you like to do? (add, search, list all, stop)");
@@ -328,9 +320,7 @@ public void prompt () {
                 }
             }
         }
-    }
-    
+    }   
     if (repeat) {prompt();}
 }
-
 }
